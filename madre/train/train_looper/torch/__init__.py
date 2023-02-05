@@ -1,3 +1,3 @@
-from madre.train.train_looper.torch.torch_looper import TorchTrainLooper
+from madre.train.train_looper.torch.torch_looper import TorchLooper
 
-__all__ = ["TorchTrainLooper"]
+__all__ = ["TorchLooper"]

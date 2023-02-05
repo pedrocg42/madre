@@ -4,14 +4,14 @@ from torch.nn.modules.loss import _Loss
 from torch.optim import Optimizer
 
 from madre.core.experiment import Experiment
-from madre.train.train_looper import TorchTrainLooper
+from madre.train.train_looper import TorchLooper
 from madre.train.trainer import Trainer
 
 
 class TorchTrainer(Trainer):
     def __init__(
         self,
-        train_looper: TorchTrainLooper,
+        train_looper: TorchLooper,
         criteria: _Loss,
         optimizer=Optimizer,
         **experiment,

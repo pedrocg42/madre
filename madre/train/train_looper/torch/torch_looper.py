@@ -1,16 +1,16 @@
 from typing import Any, Dict, Tuple
 
+import torch
 from torch.nn.modules.loss import _Loss
 from tqdm import tqdm
 
-from madre.core.experiment import Experiment
 from madre.core.model import Model, TorchModel
 from madre.data.data_source import TorchDataSource
 from madre.train.optimizer import Optimizer
 from madre.train.train_looper import TrainLooper
 
 
-class TorchTrainLooper(TrainLooper):
+class TorchLooper(TrainLooper):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
